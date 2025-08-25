@@ -1,5 +1,5 @@
 # Название workflow
-name: calc_tests_github
+name: calc_test_github
 
 # переменные окружения
 env:
