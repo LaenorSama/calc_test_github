@@ -181,3 +181,4 @@ def test_division(a, b, expected):
         if random.random() < 0.2:  # 20% шанс на ошибку
             error_type = random.choice(ERROR_TYPES)  # случайно выбираем тип ошибки
             raise error_type(f'Случайная ошибка: {error_type.__name__}')
+
