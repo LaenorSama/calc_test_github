@@ -4,7 +4,7 @@ name: calc_test_github
 # переменные окружения
 env:
   ENDPOINT: https://demo.qatools.cloud/
-  PROJECT_ID: 296
+  PROJECT_ID: 298
   TOKEN: ${{ secrets.TOKEN }}
   ALLURE_JOB_RUN_ID: ${{ github.event.inputs.ALLURE_JOB_RUN_ID }}
   ALLURE_RESULTS: "allure-results"
