@@ -66,15 +66,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # отладочные шаги, для проверки работы с переменными
-      - name: Debug environment variables
-        run: |
-          echo "ENDPOINT: $endpoint"
-          echo "PROJECT_ID: $project_id"
-        env:
-          allure_endpoint: ${{ env.ENDPOINT }}
-          allure_project_id: ${{ env.PROJECT_ID }}
-
       # установка allurectl (связующее звено с ТестОпс)
       - name: Install allurectl
         uses: allure-framework/setup-allurectl@v1
